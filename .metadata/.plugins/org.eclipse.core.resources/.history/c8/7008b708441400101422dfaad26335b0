@@ -1,0 +1,28 @@
+package com.rubypaper.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import lombok.Data;
+import lombok.Getter;
+
+
+class DTO {
+	private String name;
+	private Integer age;
+	
+	
+}
+
+@RestController
+public class BoardController {
+	
+	public BoardController() {
+		System.out.println("===> BVoardController 생성");
+	}
+	
+	@GetMapping("/hello")
+	public String hello(DTO dto) {
+		return "Hello" + dto.name;
+	}
+}

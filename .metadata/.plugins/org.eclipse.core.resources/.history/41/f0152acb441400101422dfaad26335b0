@@ -1,0 +1,16 @@
+package com.rubypaper.domain;
+
+import java.util.Date;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class BoardV0 {
+	private int seq;
+	private String title;
+	private String writer;
+	private String content;
+	private Date createDate = new Date();
+}
