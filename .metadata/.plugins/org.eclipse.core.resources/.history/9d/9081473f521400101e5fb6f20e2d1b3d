@@ -1,9 +1,0 @@
-package edu.pnu.controller;
-
-import org.springframework.web.bind.annotation.RestController;
-
-// rest 처리 컨트롤러
-@RestController
-public class MemberController2 {
-	
-}
